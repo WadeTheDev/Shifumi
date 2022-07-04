@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Chela+One&family=Cormorant&family=Red+Hat+Text&display=swap');
+*{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+}
+
+body{
+    background: #272323;
+    color: white;
+    display: flex;
+}
+
+.btns{
+    margin-left: 50px;
+    /* border: red solid 2px; */
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    /* width: 15vh; */
+    justify-content: center;
+    gap: 50PX;
+}
+
+.btns button{
+    height: 100px;
+    width: 100px;
+    border-radius: 300px;
+    border: white 7px solid;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#rock{
+    background: url('img/rock-p1.png') center no-repeat;
+    background-size: contain;
+    background-color: #618E5A;
+
+}
+#paper{
+    background: url('img/paper-p1.png') center no-repeat;
+    background-size: contain;
+    background-color: #618E5A;
+
+}
+#scissors{
+    background: url('img/scissors-p1.png') center no-repeat;
+    background-size: contain;
+    background-color: #618E5A;
+
+}
+.btns button:hover{
+    background-color: #e84614;
+
+}
+
+.container{
+    /* border: red solid 2px; */
+    width: 100%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.container h1{
+    margin-top: 50px;
+    font-size: 60px;
+    font-weight: 300;
+    font-family: 'Chela One', cursive;
+}
+
+#result{
+    /* border: red solid 2px; */
+    width: 100%;
+    font-size: 110px;
+    font-family: 'Chela One', cursive;
+    letter-spacing: 0.11em;
+    transition: 0.3s;
+}
+
+
+.section-img{
+    position: absolute;
+    bottom: 0%;
+    /* border: red solid 2px; */
+    width: 100%;
+    height: 50%;
+    display: flex;
+    justify-self: flex-end;
+    align-self: flex-end;
+}
+
+.section-img div{
+    /* border: red solid 2px; */
+    width: 50%;
+    position: relative;
+    height: 100%;
+    display: flex;
+}
+
+#p1-signs{
+    /* border: red solid 2px; */
+    justify-content: flex-end;
+}
+
+.section-img div img{
+    width: 300px;
+    height: 300px;
+}
