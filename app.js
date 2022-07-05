@@ -5,8 +5,8 @@ let blocP1 = document.getElementById('p1-signs')
 let blocP2 = document.getElementById('p2-signs')
 let result = document.getElementById('result')
 const min = 0
-const max = 3
-let signs = ['rock', 'paper', 'scissors']
+const max = 5
+let signs = ['rock', 'paper', 'scissors','rock','paper','scissors']
 
 let p1 = ""
 let p2 =  ""
@@ -39,9 +39,13 @@ const theSigns2 = () => {
     }
 }
 
+setTimeout(70000)
+
+
 theSigns2()
 
 }
+
 
 const theSigns = () => {
     
@@ -79,3 +83,9 @@ function scissorsResult(){
 rock.addEventListener('click', rockResult)
 paper.addEventListener('click', paperResult)
 scissors.addEventListener('click', scissorsResult)
+
+result.classList.add('pre-animation');
+result.innerHTML = innerHTMLString +'ravi';
+setTimeout(function(){
+    result.classList.remove('pre-animation')
+},100)
